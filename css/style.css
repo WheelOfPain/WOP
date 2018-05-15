@@ -1,0 +1,278 @@
+#dialog-overlay {
+
+	/* set it to fill the whil screen */
+	width:100%;
+	height:100%;
+
+	/* transparency for different browsers */
+	filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;
+	background:#000;
+
+	/* make sure it appear behind the dialog box but above everything else */
+	position:absolute;
+	top:0; left:0;
+	z-index:3000;
+
+	/* hide it by default */
+	display:none;
+}
+
+
+#resultsPage {
+	/* set it to fill the whole screen */
+	width:100%;
+	height:100%;
+
+	/* css3 drop shadow */
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+	/* css3 border radius */
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+	/* make sure it has the highest z-index */
+	position:absolute;
+	top:0; left:0;
+	z-index:5000;
+
+	/* hide it by default */
+	display:none;
+
+	/* set image assets */
+	background-image: url("../assets/02/Background/empty_gym_bg.jpg");
+	background-size: cover;
+}
+
+.modal-content {
+	background-color:rgba(0, 0, 0, 0)
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 150%;
+  height: 150%;
+  z-index: -1;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+#Wheel-Outer {
+	/* set position */
+    position: relative;
+	z-index:99;
+	top: 0;
+}
+#Wheel {
+	/* set position */
+    position: absolute;
+	z-index:100;
+
+	top: 10%;
+	left: 33%;
+}
+#Wheel-Arrow {
+	/* set position */
+    position: absolute;
+	z-index:101;
+	top: -5%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#Wheel-Center {
+	/* set position */
+    position: absolute;
+	z-index:103;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#donatecontainer {
+	border-right: 8px solid transparent;
+	border-top: 8px solid transparent;
+}
+
+#spincontainer {
+	border-right: 35px solid transparent;
+	border-top: 10px solid transparent;
+}
+#btnDonate {
+}
+#btnSpin {
+}
+#resultsYouGot {
+	position: center;
+	font-family: "Avenir Next";
+	font-size: 90px;
+	letter-spacing: -.7px;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-shadow: 2px 2px #000000;
+}
+#resultsResult {
+	position: center;
+	font-family: "Helvetica Neue";
+	font-size: 102px;
+	letter-spacing: 6.47px;
+	color: #FAD961;
+	font-weight: 700;
+	text-shadow: 2px 2px #000000;
+}
+.resultsBadge {
+    position: absolute;
+	z-index:101;
+}
+.resultsRepText {
+	position: absolute;
+	z-index: 200;
+	font-family: "Avenir Next";
+	font-size: 43px;
+	color: #FFFFFF;
+	font-weight: 700;
+	left: 50%;
+}
+#resultsBadge1 {
+	top: 70;
+	left: 18%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#resultsBadge2 {
+	top: 70;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#resultsBadge3 {
+	top: 70;
+	left: 82%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#resultsRepText1 {
+	top: 120;
+	left: 17.5%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#resultsRepText2 {
+	top: 120;
+	left: 49.5%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#resultsRepText3 {
+	top: 120;
+	left: 81.5%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#BadgeHolder {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#resultsTextLabel{
+	position: absolute;
+	font-family: "Avenir Next";
+	font-size: 38px;
+	letter-spacing: -.29px;
+	color: #000000;
+	font-weight: 700;
+	top: 5;
+	left: 25%;
+}
+#RSpinResultIcon {
+	position: center;
+    position: relative;
+	height: 100;
+}
+#resultsRepsImage {
+	position: relative;
+	z-index: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+#wheeldiv {
+	position: relative;
+	z-index: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header {
+	padding: inherit;
+}
+#navbarmenu {
+	padding: inherit;
+	text-transform: uppercase;
+	float: left;
+}
+/* #donatecontainer {
+	float: right;
+} */
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+		text-transform: uppercase;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

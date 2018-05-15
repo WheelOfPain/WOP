@@ -1,0 +1,176 @@
+
+/*Animation*/
+.aniSpin0 {
+    animation-name: spinWheel0;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    -webkit-animation-name: spinWheel0; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+}
+.aniSpin1 {
+    animation-name: spinWheel1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin2 {
+    animation-name: spinWheel2;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin3 {
+    animation-name: spinWheel3;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin4 {
+    animation-name: spinWheel4;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin5 {
+    animation-name: spinWheel5;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin6 {
+    animation-name: spinWheel6;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+.aniSpin7 {
+    animation-name: spinWheel7;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+@keyframes spinWheel0 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1755deg);
+  }
+}
+@-webkit-keyframes spinWheel0 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1755deg);
+  }
+}
+
+@keyframes spinWheel1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1710deg);
+  }
+}
+@keyframes spinWheel2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1665deg);
+  }
+}
+@keyframes spinWheel3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1620deg);
+  }
+}
+@keyframes spinWheel4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1575deg);
+  }
+}
+@keyframes spinWheel5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1530deg);
+  }
+}
+@keyframes spinWheel6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1485deg);
+  }
+}
+@keyframes spinWheel7 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}
+
+.aniFadeIn {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+	
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -1,0 +1,83 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Data.js"></script>
+<script src="js/wop.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body style="text-align:center">
+<div id="mainPage" >
+	<div id ='header'>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="#">Store</a>
+</div>
+		<div id="navbarmenu">
+			<span style="font-size:50px;color:#59BEC6;cursor:pointer" onclick="openNav()">&#9776; WOP</span>
+			<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+		</div>
+<div align=right id="donatecontainer" class="buttoncontainer">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NQEFGMBU5LH5E">
+<input type="image" id="btnDonate" class="button" src="assets/01/Buttons/Donate Button - Green.png"/>
+</form></div>
+<br/>
+<div id="wheeldiv">
+	<img class="rotate" id="Wheel-Outer" src="assets/01/Wheel/Outer_Wheel_v9.png" alt="WOP">
+	<img class="rotate" id="Wheel-Arrow" src="assets/01/Wheel/Silver_Pointer.png" alt="WOP">
+	<img class="rotate" id="Wheel" src="assets/01/Wheel/Inner_Circle_v9.png" alt="WOP">
+</div>
+<div id="spincontainer" class="buttoncontainer">
+		<input type="image" alt="Spin" id="btnSpin" class="button" src="assets/01/Buttons/Spin Button - Blue.png"/>
+</div>
+<img src="./assets/01/Background/Landing_Page_BG.png" id="bg" alt="">
+  <!-- Results Window content -->
+ <div id="dialog-overlay" style="display: block;"></div>
+<!-- The Modal -->
+<div id="resultsPage" class="modal">
+  <div class="modal-content">
+    <div id="resultsYouGot">You Got: </div>
+	<div id="resultsResult"><span id="RSpinResult"></span></div>
+	<div id="resultsResultImage"><image src="assets/02/Icons/Pull-Ups Icon.png" id="RSpinResultIcon"/></div>
+	<div id="resultsRepsImage">
+		<image id="BadgeHolder" src="assets/02/Images/Cutout_for_Badges.png"/>
+		<image class="resultsBadge" id="resultsBadge1" src="assets/02/Images/Badges/01_Badge_(Recruit).png"/>
+		<image class="resultsBadge" id="resultsBadge2" src="assets/02/Images/Badges/02_Badge_(Veteran).png"/>
+		<image class="resultsBadge" id="resultsBadge3" src="assets/02/Images/Badges/03_Badge_(Elite).png"/>
+		<span class="resultsRepText" id="resultsTextLabel">Choose Your Level!</span>
+		<span class="resultsRepText" id="resultsRepText1">10</span>
+		<span class="resultsRepText" id="resultsRepText2">20</span>
+		<span class="resultsRepText" id="resultsRepText3">30</span>
+	</div>
+	<div id="spincontainer" class="buttoncontainer">
+		<input type="image" id="btnSpinAgain" alt="Spin Again" class="button" src="assets/02/Buttons/Spin Again Button - Blue.png"/>
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="NQEFGMBU5LH5E">
+		<input type="image" id="btnDonate2" class="button" src="assets/01/Buttons/Donate Button - Green.png"/>
+		</form>
+	</div>
+  </div>
+</div>
+</div>
+</body>
+</html>
